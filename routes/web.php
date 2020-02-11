@@ -14,3 +14,9 @@
 Route::get('/', function () {
     return view('welcome');
 });
+Route::resource('customers', 'CustomerController');
+Route::resource('bills', 'BillController');
+Route::resource('bill_details', 'BillDetailController');
+Route::resource('products', 'ProductController');
+Route::resource('type_products', 'TypeProductController');
+Route::resource('users', 'UserController');
