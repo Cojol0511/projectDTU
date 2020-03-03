@@ -20,3 +20,6 @@ Route::resource('bill_details', 'BillDetailController');
 Route::resource('products', 'ProductController');
 Route::resource('type_products', 'TypeProductController');
 Route::resource('users', 'UserController');
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
