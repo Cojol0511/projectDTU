@@ -195,31 +195,33 @@ nav {
 }
 
 .prevBtn, .nextBtn {
+    text-align: center;
+    background-color: transparent;
     cursor: pointer;
     position: absolute;
-    top: 300px;
-    width: auto;
-    margin-top: -22px;
+    top: 320px;
+    width: 40px;
+    margin-top: -10px;
     padding: 16px;
     color: white;
     font-weight: bold;
     font-size: 20px;
     transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
     user-select: none;
-    height: 60px;
-    opacity: 0.1;
+    height: 40px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+.prevBtn {
+    left: 30px;
 }
 
 .nextBtn {
-    right: 0;
-    border-radius: 3px 0 0 3px;
+    right: 30px;
+    user-select: none;
 }
 
-.prevBtn:hover, .nextBtn:hover {
-    background-color: rgba(0, 0, 0, 0.9);
-    opacity: 0.5;
-}
 
 .fade {
     -webkit-animation-name: fade;
@@ -246,9 +248,6 @@ nav {
     }
 }
 
-.carousel-container .carousel-slide img {
-    
-}
 
 .carousel-container .carousel-slide .carousel-content {
     position: absolute;
