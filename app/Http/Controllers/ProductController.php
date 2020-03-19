@@ -15,6 +15,10 @@ class ProductController extends Controller
     public function index()
     {
         //
+        $products = Product::all();
+
+        return view('layouts.products.index', ['products' => $products]);
+        //return redirect()->route('products.index');
     }
 
     /**
@@ -25,6 +29,7 @@ class ProductController extends Controller
     public function create()
     {
         //
+        return view('products.create');
     }
 
     /**
@@ -36,6 +41,31 @@ class ProductController extends Controller
     public function store(Request $request)
     {
         //
+        $this->validate(
+            $request,
+            [
+                'name' => 'required',
+                'id_type' => 'required',
+                'id_supplier' => 'required',
+                'description' => 'required',
+                'price' => 'required',
+                'promotion_price' => 'required',
+                'image' => 'required',
+            ],
+            [
+                // thong bao nhap
+            ]
+        );
+        $product = new Product();
+        $product->name = $request->name;
+        $product->id_type =  $request->id_type;
+        $product->id_supplier =  $request->id_supplier;
+        $product->description =  $request->description;
+        $product->price =  $request->id_price;
+        $product->promotion_price =  $request->promotion_price;
+        $product->image =  $request->image;
+        $product->save();
+        return redirect()->route('products.index');
     }
 
     /**
@@ -44,9 +74,13 @@ class ProductController extends Controller
      * @param  \App\Product  $product
      * @return \Illuminate\Http\Response
      */
-    public function show(Product $product)
+    public function show($product)
     {
         //
+        return view('product.show', [
+            'product' => product::whereSlug($product)->first(),
+            'products' => product::where('status', 0)->orderBy('id', 'desc')->take(12)->get(),
+        ]);
     }
 
     /**
@@ -55,9 +89,13 @@ class ProductController extends Controller
      * @param  \App\Product  $product
      * @return \Illuminate\Http\Response
      */
-    public function edit(Product $product)
+    public function edit($slug)
     {
         //
+        $product = product::whereSlug($slug)->first();
+        return view('product.edit', [
+            'product' => $product,
+        ]);
     }
 
     /**
@@ -67,9 +105,19 @@ class ProductController extends Controller
      * @param  \App\Product  $product
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Product $product)
+    public function update(Request $request, $id)
     {
         //
+        $product = Product::find($id);
+        $product->name = $request->name;
+        $product->id_type =  $request->id_type;
+        $product->id_supplier =  $request->id_supplier;
+        $product->description =  $request->description;
+        $product->price =  $request->id_price;
+        $product->promotion_price =  $request->promotion_price;
+        $product->image =  $request->image;
+        $product->save();
+        return redirect()->route('users.index');
     }
 
     /**
@@ -78,8 +126,11 @@ class ProductController extends Controller
      * @param  \App\Product  $product
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Product $product)
+    public function destroy($id)
     {
         //
+        $product = Product::find($id);
+        $product->delete();
+        return redirect()->route('products.index');
     }
 }
