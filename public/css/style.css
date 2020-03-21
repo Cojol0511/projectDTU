@@ -1,5 +1,6 @@
 /* Font family */
 
+@import url('https://fonts.googleapis.com/css?family=Roboto:700&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap');
 * {
     margin: 0;
@@ -199,29 +200,27 @@ nav {
     background-color: transparent;
     cursor: pointer;
     position: absolute;
-    top: 320px;
+    top: 350px;
     width: 40px;
     margin-top: -10px;
     padding: 16px;
     color: white;
     font-weight: bold;
     font-size: 20px;
-    transition: 0.6s ease;
     user-select: none;
     height: 40px;
     border: 1px solid white;
     border-radius: 50%;
+    display: none;
 }
 
 .prevBtn {
-    left: 30px;
+    left: 50px;
 }
 
 .nextBtn {
-    right: 30px;
-    user-select: none;
+    right: 50px;
 }
-
 
 .fade {
     -webkit-animation-name: fade;
@@ -248,6 +247,17 @@ nav {
     }
 }
 
+.carousel-container:hover .prevBtn {
+    display: block;
+    transform: translateX(-20px);
+    transition: .5s ease-in;
+}
+
+.carousel-container:hover .nextBtn {
+    display: block;
+    transform: translateX(20px);
+    transition: .5s ease-in;
+}
 
 .carousel-container .carousel-slide .carousel-content {
     position: absolute;
@@ -473,5 +483,38 @@ nav {
     display: none;
 }
 
+/* ----------X---------- Featured products ---------X---------- */
 
-/* --------------------- Featured products -------------------- */
+/* --------------------- Promtion -------------------- */
+
+.promotion {
+    top: 600px;
+    background-image: url(../img/banner25.jpg);
+}
+
+.promotion .promotion-content {
+    margin: 0 auto;
+    position: relative;
+    width: 517px;
+    height: 425px;
+}
+
+.container-content {
+    width: 517px;
+    height: 425px;
+    position: absolute;
+    text-align: center;
+}
+
+.main-content{
+    font-size: 25px;
+    font-weight: 900;
+    margin: 50px auto;
+}
+
+.sub-content{
+    margin: 30px;
+    font-size: 20px;
+}
+
+/* ----------X---------- Promtion ----------X--------- */
