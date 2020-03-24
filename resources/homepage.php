@@ -13,12 +13,6 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Mona</title>
 
-  <!-- Boostrap CSS -->
-  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script> -->
-
   <!-- Font awesome -->
   <script src="https://kit.fontawesome.com/1fa75c7674.js" crossorigin="anonymous"></script>
 
@@ -485,6 +479,156 @@
   </section>
   <!-- ----------------X----------------Promotion---------X-------------------- -->
 
+  <!-- ---------------------------------Product Promotion------------------------------ -->
+  <section class="section product-promotion">
+    <div class="container">
+      <div class="owl-carousel">
+        <div class="product-details img-promotion">
+          <div class="product-img">
+            <div>
+              <a href="#"><img src="../public/img/product-16-470x470.jpg" alt="new product 1"></a>
+            </div>
+          </div>
+          <div class="product-name">
+            <a href="#">Chanh leo</a>
+          </div>
+          <div class="product-prices">
+            <span>190,000</span>
+            <span>đ</span>
+          </div>
+        </div>
+        <div class="product-details img-promotion">
+          <div class="product-img">
+            <div>
+              <a href="#"><img src="../public/img/product-16-470x470.jpg" alt="new product 1"></a>
+            </div>
+          </div>
+          <div class="product-name">
+            <a href="#">Chanh leo</a>
+          </div>
+          <div class="product-prices">
+            <span>190,000</span>
+            <span>đ</span>
+          </div>
+        </div>
+        <div class="product-details img-promotion">
+          <div class="product-img">
+            <div>
+              <a href="#"><img src="../public/img/product-16-470x470.jpg" alt="new product 1"></a>
+            </div>
+          </div>
+          <div class="product-name">
+            <a href="#">Chanh leo</a>
+          </div>
+          <div class="product-prices">
+            <span>190,000</span>
+            <span>đ</span>
+          </div>
+        </div>
+        <div class="product-details img-promotion">
+          <div class="product-img">
+            <div>
+              <a href="#"><img src="../public/img/product-16-470x470.jpg" alt="new product 1"></a>
+            </div>
+          </div>
+          <div class="product-name">
+            <a href="#">Chanh leo</a>
+          </div>
+          <div class="product-prices">
+            <span>190,000</span>
+            <span>đ</span>
+          </div>
+        </div>
+        <div class="product-details img-promotion">
+          <div class="product-img">
+            <div>
+              <a href="#"><img src="../public/img/product-16-470x470.jpg" alt="new product 1"></a>
+            </div>
+          </div>
+          <div class="product-name">
+            <a href="#">Chanh leo</a>
+          </div>
+          <div class="product-prices">
+            <span>190,000</span>
+            <span>đ</span>
+          </div>
+        </div>
+        <div class="product-details img-promotion">
+          <div class="product-img">
+            <div>
+              <a href="#"><img src="../public/img/product-16-470x470.jpg" alt="new product 1"></a>
+            </div>
+          </div>
+          <div class="product-name">
+            <a href="#">Chanh leo</a>
+          </div>
+          <div class="product-prices">
+            <span>190,000</span>
+            <span>đ</span>
+          </div>
+        </div>
+        <div class="product-details img-promotion">
+          <div class="product-img">
+            <div>
+              <a href="#"><img src="../public/img/product-16-470x470.jpg" alt="new product 1"></a>
+            </div>
+          </div>
+          <div class="product-name">
+            <a href="#">Chanh leo</a>
+          </div>
+          <div class="product-prices">
+            <span>190,000</span>
+            <span>đ</span>
+          </div>
+        </div>
+
+
+        <div class="owl-navigation">
+          <span class="owl-nav-prev"><i class="fas fa-chevron-left"></i></span>
+          <span class="owl-nav-next"><i class="fas fa-chevron-right"></i></span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ----------------X----------------Product Promotion-------------X---------------- -->
+
+  <!-- ------------------------------------advertisement--------------------------- -->
+  <section class="section advertisement">
+    <div class="advertisement-wrap">
+      <div class="maketing1">
+        <a href="#"><img src="../public/img/banner29.jpg" alt="banner-29"></a>
+      </div>
+      <div class="marketing2">
+        <a href="#"><img src="../public/img/banner30.jpg" alt="banner-30"></a>
+        <a href="#"></a>
+      </div>
+      <div class="marketing3">
+        <a href="#"><img src="../public/img/banner31.jpg" alt="banner-31"></a>
+        <a href="#"><img src="../public/img/banner32.jpg" alt="banner-32"></a>
+        <a href="#"><img src="../public/img/banner33.jpg" alt="banner-33"></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ----------------X----------------advertisement--------------X--------------- -->
+
+
+  <!-- ---------------------------------supplier------------------------------ -->
+  <section class="section supplier">
+    <div class="container">
+      <div class="owl-carousel">
+        <div class="item"><a href="#"><img src="../public/img/brand1.png" alt="supplier1"></a></div>
+        <div class="item"><a href="#"><img src="../public/img/brand2.png" alt="supplier2"></a></div>
+        <div class="item"><a href="#"><img src="../public/img/brand3.png" alt="supplier3"></a></div>
+        <div class="item"><a href="#"><img src="../public/img/brand5.png" alt="supplier4"></a></div>
+        <div class="item"><a href="#"><img src="../public/img/brand1.png" alt="supplier5"></a></div>
+        <div class="item"><a href="#"><img src="../public/img/brand2.png" alt="supplier6"></a></div>
+        <div class="item"><a href="#"><img src="../public/img/brand3.png" alt="supplier7"></a></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ----------------X----------------supplier--------------X--------------- -->
 
 
   <!-- Custom js -->
