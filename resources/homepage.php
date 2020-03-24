@@ -13,6 +13,15 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Mona</title>
 
+<<<<<<< HEAD
+=======
+  <!-- Boostrap CSS -->
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script> -->
+
+>>>>>>> ea9d20530f38e68d1bdc164473b4ae030a2d5877
   <!-- Font awesome -->
   <script src="https://kit.fontawesome.com/1fa75c7674.js" crossorigin="anonymous"></script>
 
@@ -455,11 +464,16 @@
   </section>
 
   <!-- ----------------X----------------Featured products---------X-------------------- -->
+<<<<<<< HEAD
 
+=======
+ 
+>>>>>>> ea9d20530f38e68d1bdc164473b4ae030a2d5877
   <!-- ---------------------------------Promotion------------------------------ -->
 
   <section class="section promotion">
     <div class="promotion-content">
+<<<<<<< HEAD
       <div class="container-content">
         <h1 class="main-content">Khuyến Mãi Trong Tuần</h1>
         <p class="sub-content">Cơ hội để gia đình bạn sở hữu những sản phẩm ưu đãi</p>
@@ -475,10 +489,17 @@
           </span>
         </div>
       </div>
+=======
+      <div class="title-promotion">
+        <h1>Khuyến Mãi Trong Tuần</h1>
+      </div>
+      
+>>>>>>> ea9d20530f38e68d1bdc164473b4ae030a2d5877
     </div>
   </section>
   <!-- ----------------X----------------Promotion---------X-------------------- -->
 
+<<<<<<< HEAD
   <!-- ---------------------------------Product Promotion------------------------------ -->
   <section class="section product-promotion">
     <div class="container">
@@ -629,6 +650,8 @@
   </section>
 
   <!-- ----------------X----------------supplier--------------X--------------- -->
+=======
+>>>>>>> ea9d20530f38e68d1bdc164473b4ae030a2d5877
 
 
   <!-- Custom js -->

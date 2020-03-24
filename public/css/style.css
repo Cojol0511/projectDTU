@@ -212,7 +212,10 @@ nav {
     border: 1px solid white;
     border-radius: 50%;
     display: none;
+<<<<<<< HEAD
     outline: 0;
+=======
+>>>>>>> ea9d20530f38e68d1bdc164473b4ae030a2d5877
 }
 
 .prevBtn {
@@ -494,6 +497,7 @@ nav {
 }
 
 .promotion .promotion-content {
+<<<<<<< HEAD
     margin: 0 auto;
     position: relative;
     width: 517px;
@@ -744,3 +748,21 @@ form a:hover {
 }
 
 /* ----------X---------- Form popup -------------X------ */
+=======
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 517px;
+    height: 425px;
+    position: relative;
+}
+
+.promotion .promotion-content .title-promotion {
+    position: absolute;
+    font-size: 25px;
+    font-weight: 900;
+    margin: 50px auto;
+}
+
+/* ----------X---------- Promtion ----------X--------- */
+>>>>>>> ea9d20530f38e68d1bdc164473b4ae030a2d5877
