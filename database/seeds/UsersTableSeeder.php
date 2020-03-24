@@ -1,9 +1,9 @@
 <?php
 
-use App\Customer;
+use App\User;
 use Illuminate\Database\Seeder;
 
-class CustomersTableSeeder extends Seeder
+class UsersTableSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -13,14 +13,16 @@ class CustomersTableSeeder extends Seeder
     public function run()
     {
         //
+        //
         $faker = Faker\Factory::create();
         for($i = 0; $i < 10; $i++){
-            Customer::insert([
+            User::insert([
                 'name' => $faker->lastName,
-                'gender' => ('male'|'female'),
+                'gender' => ('male'|| 'female'),
                 'email' => $faker->freeEmail,
                 'address' => $faker->streetAddress,
                 'phone_number' => $faker->tollFreePhoneNumber,
+                'password' => bcrypt('123456')
             ]);
         }
     }
