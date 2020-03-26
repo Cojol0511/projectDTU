@@ -35,6 +35,19 @@ document.getElementById("close").addEventListener("click", function(){
 
 
 // ----------------X--------------popup------------------X----------------------
+
+
+document.getElementById("search").addEventListener("click", function(){
+    document.querySelector("#search-popup").style.display = "block";
+});
+
+document.getElementById("close-search").addEventListener("click", function(){
+    document.querySelector("#search-popup").style.display = "none";
+});
+
+
+
+
 // ----------------------------------Slide---------------------------------------
 var slideIndex = 1;
 showSlides(slideIndex);

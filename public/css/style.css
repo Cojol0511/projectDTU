@@ -212,10 +212,7 @@ nav {
     border: 1px solid white;
     border-radius: 50%;
     display: none;
-<<<<<<< HEAD
     outline: 0;
-=======
->>>>>>> ea9d20530f38e68d1bdc164473b4ae030a2d5877
 }
 
 .prevBtn {
@@ -497,7 +494,6 @@ nav {
 }
 
 .promotion .promotion-content {
-<<<<<<< HEAD
     margin: 0 auto;
     position: relative;
     width: 517px;
@@ -511,13 +507,13 @@ nav {
     text-align: center;
 }
 
-.main-content{
+.main-content {
     font-size: 42px;
     font-weight: 900;
     margin: 50px auto;
 }
 
-.sub-content{
+.sub-content {
     margin: 30px;
     font-size: 17px;
 }
@@ -546,7 +542,7 @@ nav {
     padding: .4em .1em .1em;
     margin: 0 .05em .2em;
     border-radius: 5px;
-    background-color: rgba(0,0,0,.85);
+    background-color: rgba(0, 0, 0, .85);
 }
 
 .time-promotion span strong {
@@ -557,6 +553,7 @@ nav {
 }
 
 /* ----------X---------- Promtion ----------X--------- */
+
 /* --------------------- Product Promotion -------------------- */
 
 .product-promotion {
@@ -574,20 +571,19 @@ nav {
     width: 280px;
 }
 
-.owl-nav [class*='owl-']{
+.owl-nav [class*='owl-'] {
     outline: none;
 }
 
-
-
 /* ----------X---------- Product Promotion -------------X------ */
+
 /* --------------------- advertisement -------------------- */
 
 .advertisement {
     top: 590px;
 }
 
-.advertisement-wrap{
+.advertisement-wrap {
     margin: 0 auto;
     max-width: 1240px;
     display: grid;
@@ -600,8 +596,8 @@ nav {
     margin: 0 36px 20px 0;
 }
 
-
 /* ----------X---------- advertisement -------------X------ */
+
 /* --------------------- supplier -------------------- */
 
 .supplier {
@@ -614,6 +610,7 @@ nav {
 }
 
 /* ----------X---------- supplier -------------X------ */
+
 /* --------------------- Form popup -------------------- */
 
 .popup {
@@ -627,11 +624,10 @@ nav {
     position: fixed;
 }
 
-#close {
+#close, #close-search{
     text-align: right;
     font-size: 20px;
 }
-
 
 
 .form-popup, .register-popup {
@@ -641,7 +637,6 @@ nav {
     height: 100vh;
     color: var(--text-black);
 }
-
 
 .register-popup {
     height: 125vh;
@@ -655,7 +650,7 @@ form {
     padding: 1rem 1.2rem;
     box-shadow: 0.4px 4px 12px rgba(0, 0, 0, .2);
     border-radius: 1rem;
-    text-shadow: .4px .4px 5px  rgba(0, 0, 0, .2);
+    text-shadow: .4px .4px 5px rgba(0, 0, 0, .2);
     margin-top: 15%;
 }
 
@@ -663,7 +658,7 @@ form .login-regis {
     display: flex;
 }
 
-form .login-regis  h2 {
+form .login-regis h2 {
     text-align: left;
     font-weight: 400;
     user-select: none;
@@ -692,7 +687,8 @@ form input {
     margin: 8px auto;
     border: none;
     border-bottom: 1px solid dodgerblue;
-    outline: none ;/* mat o vuong bao boc */
+    outline: none;
+    /* mat o vuong bao boc */
     padding: 6px 4px;
     width: 100%;
 }
@@ -708,9 +704,9 @@ form label {
     transition: 200ms ease;
 }
 
-
 /* valid nhap hop le */
-input:focus + label, input:valid + label {
+
+input:focus+label, input:valid+label {
     top: -10px;
     font-size: 14px;
     color: dodgerblue;
@@ -725,17 +721,15 @@ form button {
     width: 100%;
     cursor: pointer;
     transition: 200ms;
-    box-shadow: .2px 2px 12px rgba(0, 0, 0,  .3);
+    box-shadow: .2px 2px 12px rgba(0, 0, 0, .3);
     text-transform: uppercase;
 }
-
 
 form p {
     font-weight: 300;
     font-size: 14px;
     margin-top: 2rem;
     color: var(--text-black);
-    
 }
 
 form p a {
@@ -748,21 +742,51 @@ form a:hover {
 }
 
 /* ----------X---------- Form popup -------------X------ */
-=======
-    display: flex;
-    justify-content: center;
-    margin: 0 auto;
-    width: 517px;
-    height: 425px;
+
+/* --------------------- Search popup -------------------- */
+
+.search_box {
+    width: 50%;
     position: relative;
+    left: 25%;
+    top: 40%;
 }
 
-.promotion .promotion-content .title-promotion {
+.search_box input[type="text"] {
+    width: 100%;
+    padding: 20px;
+    padding-right: 60px;
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, 0.3);
+    border: 2px solid #fff;
+    border-radius: 10px;
+    font-size: 18px;
+    color: #fff;
+    outline: none;
+}
+
+.popup .search_box .fa-search {
     position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 25px;
+    color: #fff;
     font-size: 25px;
-    font-weight: 900;
-    margin: 50px auto;
 }
 
-/* ----------X---------- Promtion ----------X--------- */
->>>>>>> ea9d20530f38e68d1bdc164473b4ae030a2d5877
+::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: #fff;
+}
+
+::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #fff;
+}
+
+:-ms-input-placeholder {
+    /* IE 10+ */
+    color: #fff;
+}
+
+/* ----------X---------- Search popup -------------X------ */
