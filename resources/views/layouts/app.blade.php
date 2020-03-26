@@ -8,10 +8,25 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Mona') }}</title>
+    <title>Mona</title>
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <!-- Font awesome -->
+  <script src="https://kit.fontawesome.com/1fa75c7674.js" crossorigin="anonymous"></script>
+
+<!-- Google font -->
+<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+
+<!-- Owl Carousel -->
+<link rel="stylesheet" href="./css/owl.carousel.min.css">
+<link rel="stylesheet" href="./css/owl.theme.default.min.css">
+
+<!--  Custom style -->
+<link rel="stylesheet" href="./css/style.css">
+
+<!-- Jquery -->
+<script src="./js/jquery-341.min.js"></script>
 </head>
 <body>
     <div id="app">
@@ -29,7 +44,7 @@
 
                     <!-- Branding Image -->
                     <a class="navbar-brand" href="{{ url('/') }}">
-                        {{ config('app.name', 'Mona') }}
+                    <img src="./img/logo-new.png" alt="MonaLogo">
                     </a>
                 </div>
 
