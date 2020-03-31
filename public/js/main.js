@@ -11,6 +11,43 @@ $(window).on("scroll", function () {
 
 // ----------------X--------------Sticky------------------X----------------------
 
+
+// -------------------------------Popup-----------------------------------------
+
+document.getElementById("user").addEventListener("click", function(){
+    document.querySelector(".popup").style.display = "block";
+});
+
+document.getElementById("register").addEventListener("click", function(){
+    document.querySelector(".register-popup").style.display = "flex";
+    document.querySelector(".form-popup").style.display = "none";
+});
+
+document.getElementById("login").addEventListener("click", function(){
+    document.querySelector(".form-popup").style.display = "flex";
+    document.querySelector(".register-popup").style.display = "none";
+})
+
+
+document.getElementById("close").addEventListener("click", function(){
+    document.querySelector(".popup").style.display = "none";
+});
+
+
+// ----------------X--------------popup------------------X----------------------
+
+
+document.getElementById("search").addEventListener("click", function(){
+    document.querySelector("#search-popup").style.display = "block";
+});
+
+document.getElementById("close-search").addEventListener("click", function(){
+    document.querySelector("#search-popup").style.display = "none";
+});
+
+
+
+
 // ----------------------------------Slide---------------------------------------
 var slideIndex = 1;
 showSlides(slideIndex);
@@ -35,9 +72,11 @@ function showSlides(n) {
 
 // -----------------X--------------Slide-----------------------X---------------
 
-// ----------------------------------Featured product---------------------------------------
+
 
 $(document).ready(function(){
+
+    // ----------------------------------Featured product---------------------------------------
     $("a").click(function(event){
         if($(this).attr("id") === "new"){
             event.preventDefault();
@@ -74,4 +113,29 @@ $(document).ready(function(){
             });
         }
     })
-})
+
+// ----------------------------------Product Promotion---------------------------------------
+    $('.owl-carousel').owlCarousel({
+        loop: true,
+        autoplay: true,
+        margin: 10,
+        nav: true,
+        responsive: {
+            0:{
+                items: 1
+            },
+            600:{
+                items: 3
+            },
+            1000:{
+                items: 4
+            }
+        },
+        autoplayHoverPause: true,
+        navText:[$('.owl-navigation .owl-nav-prev'), $('.owl-navigation .owl-nav-next')]
+    });
+});
+
+
+
+
