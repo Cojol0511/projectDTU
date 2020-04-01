@@ -21,6 +21,8 @@ class CreateProductsTable extends Migration
             $table->text('description');
             $table->float('price');
             $table->float('promotion_price');
+            $table->integer('id_suppiler')->unsigned();
+            $table->foreign('id_suppiler')->references('id')->on('suppliers');
             $table->string('image');
             $table->timestamps();
         });
