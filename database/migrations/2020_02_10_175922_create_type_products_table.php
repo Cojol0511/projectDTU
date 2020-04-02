@@ -18,8 +18,6 @@ class CreateTypeProductsTable extends Migration
             $table->string('name');
             $table->text('description');
             $table->string('image');
-            $table->integer('id_suppiler')->unsigned();
-            $table->foreign('id_suppiler')->references('id')->on('suppliers');
             $table->timestamps();
         });
     }
