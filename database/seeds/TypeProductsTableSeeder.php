@@ -14,9 +14,16 @@ class TypeProductsTableSeeder extends Seeder
     {
         //
         $faker = Faker\Factory::create();
-        for($i = 0; $i < 10; $i++){
+
+        $list_typeProducts =  array(
+            "Đồ uống",
+            "Trái cây",
+            "Đồ khô",
+            "Rau củ"
+        );
+        foreach($list_typeProducts as $typeProduct){
             Type_product::insert([
-                'name' => $faker->name(),
+                'name' => $typeProduct,
                 'description' => $faker->realText(50),
                 'image' => str_random(10)
             ]);

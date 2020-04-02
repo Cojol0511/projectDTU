@@ -14,12 +14,11 @@ class BillDetailsTableSeeder extends Seeder
     {
         //
         $faker = Faker\Factory::create();
-        for($i = 0; $i < 10; $i++){
+        for($i = 0; $i < 20; $i++){
             Bill_detail::insert([
                 'id_bill' => random_int(1,10),
                 'id_product' => random_int(1,10),
                 'quantily' => random_int(1,5),
-                'unit_price' => random_int(1000,1000000),
             ]);
         }
     }
