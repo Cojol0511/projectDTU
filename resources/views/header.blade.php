@@ -62,60 +62,10 @@
 
   <!-- ---------------------------------Form popup------------------------------ -->
   <div class="popup" id="popup">
-    <div id="close"><i class="fas fa-times"></i></div>
-    <div class="form-popup" id="formLogin">
-      <form action="">
-        <div class="login-regis">
-          <h2>Đăng Nhập</h2>
-          <a href="#" id="register">Đăng ký</a>
-        </div>
-        <div class="input-group">
-          <input type="email" id="email" class="form-control" name="email" required
-            autofocus>
-          <label for="username">Nhập địa chỉ Email</label>
-        </div>
-
-        <div class="input-group">
-          <input type="password" id="password" required>
-          <label for="password">Nhập mật khẩu</label>
-          <!-- dieu huong dau nhay cho the input -->
-        </div>
-        <button type="submit">Đăng Nhập</button>
-        <p>Bạn quên mật khẩu?<a href="#">Quên mật khẩu</a></p>
-      </form>
-
-    </div>
+    @include('login');
 
 
-    <div class="register-popup" id="formRegister">
-      <form action="">
-        <div class="login-regis">
-          <h2>Đăng Ký</h2>
-          <a href="#" id="login">Đăng Nhập</a>
-        </div>
-        <div class="input-group">
-          <input type="text" id="email" required>
-          <label for="email">Nhập địa chỉ Email</label>
-        </div>
-
-        <div class="input-group">
-          <input type="password" id="password" required>
-          <label for="password">Nhập mật khẩu</label>
-          <!-- dieu huong dau nhay cho the input -->
-        </div>
-        <div class="input-group">
-          <input type="text" id="fullName" required>
-          <label for="fullName">Nhập Họ Và Tên</label>
-          <!-- dieu huong dau nhay cho the input -->
-        </div>
-        <div class="input-group">
-          <input type="text" id="numberPhone" required>
-          <label for="numberPhone">Nhập số điện thoại</label>
-          <!-- dieu huong dau nhay cho the input -->
-        </div>
-        <button type="submit">Đăng Ký</button>
-      </form>
-    </div>
+    @include('register');
 
 
   </div>

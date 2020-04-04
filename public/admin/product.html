@@ -208,23 +208,64 @@
 
         <!-- Product -->
         <div class="table-product">
-            <div class="containt-btn"><button class="add-btn">+ ADD</button></div>
-            <table>
-                <thead>
+            <div class="containt-btn"><button class="add-btn" id="add">+ ADD</button></div>
+            <table width="100%" border="1" cellpadding="0" cellmargin="0" id="grid-product">
                     <tr>
-                        <th>id</th>
-                        <th>Name</th>
-                        <th>type product</th>
-                        <th>Price</th>
-                        <th>Promotion price</th>
-                        <th>Suppliers</th>
-                        <th>Image</th>
-                        <th>Edit</th>
+                        <td>id</td>
+                        <td>Name</td>
+                        <td>type product</td>
+                        <td>Price</td>
+                        <td>Promotion price</td>
+                        <td>Suppliers</td>
+                        <td>Image</td>
+                        <td>Edit</td>
                     </tr>
-                </thead>
             </table>
         </div>
         <!-- /product -->
+
+        <!-- Add product -->
+        <div class="popup">
+          <div id="close"><i class="fas fa-times"></i></div>
+          <div class="form-product">
+            <h3>Thông tin sản phẩm</h3>
+            <label>Name</label>
+            <input type="text" id="name">
+            <span id="name-error" class="error">&nbsp;</span>
+            <br>
+    
+            <label>Type product</label>
+            <input type="text" id="typeProduct">
+            <span id="typeProduct-error" class="error">&nbsp;</span>
+            <br>
+    
+            <label>Price</label>
+            <input type="text" id="price">
+            <span id="price-error" class="error">&nbsp;</span>
+            <br>
+    
+            <label>Promotion price</label>
+            <input type="text" id="promotionPrice">
+            <span id="promotionPrice-error" class="error">&nbsp;</span>
+            <br>
+    
+            <label>Suppliers</label>
+            <input type="text" id="suppliers">
+            <span id="suppliers-error" class="error">&nbsp;</span>
+            <br>
+  
+            <label>Image</label>
+            <button>Choice</button>
+            <span id="suppliers-error" class="error">&nbsp;</span>
+            <br>
+    
+            <label>&nbsp;</label>
+            <button onclick="save()">Save</button>
+        </div>
+        </div>
+
+
+        <!-- /Addproduct -->
 
       </div>
       <!-- End of Main Content -->
@@ -272,11 +313,11 @@
   <!-- Bootstrap core JavaScript-->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
+  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/0.10.0/lodash.min.js"></script>
 
 
   <!-- Custom scripts for all pages-->
-  <script src="js/sb-admin-2.js"></script>
+  <script src="./js/product.js"></script>
 
 
 </body>

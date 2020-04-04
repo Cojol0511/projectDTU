@@ -30,3 +30,5 @@ Route::get('index', 'PageController@getIndex');
 Route::get('admin', 'AdminController@getAdmin');
 
 Route::get('/Add-Cart/{id}', 'CartController@AddCart');
+
+Route::post('dang-ki', 'PageController@postSingin');
