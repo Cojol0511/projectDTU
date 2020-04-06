@@ -34,9 +34,7 @@
     display: none;
 }
 
-.cart:hover #beta-dropdown{
-    display: block;
-}
+
  </style>
 
   <!-- Jquery -->

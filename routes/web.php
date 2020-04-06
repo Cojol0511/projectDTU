@@ -24,6 +24,7 @@ Route::get('/', function () {
 
 // Route::get('/home', 'HomeController@index')->name('home');
 
+
 // tuan
 Route::get('index', 'PageController@getIndex');
 

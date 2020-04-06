@@ -3,7 +3,7 @@
       <form action="">
         <div class="login-regis">
           <h2>Đăng Nhập</h2>
-          <p id="register">Đăng ký</p>
+          <a id="register">Đăng ký</a>
         </div>
         <div class="input-group">
           <input type="email" id="email" class="form-control" name="email" required

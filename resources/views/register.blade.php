@@ -2,7 +2,7 @@
     <form action="" method="post">
       <div class="login-regis">
         <h2>Đăng Ký</h2>
-        <p id="login">Đăng Nhập</p>
+        <a id="login">Đăng Nhập</a>
       </div>
 
       <div class="input-group">
