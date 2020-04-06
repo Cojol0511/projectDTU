@@ -18,11 +18,12 @@ class UsersTableSeeder extends Seeder
         for($i = 0; $i < 10; $i++){
             User::insert([
                 'name' => $faker->lastName,
-                'gender' => ('male'|| 'female'),
+                'gender' => rand(0,1),
                 'email' => $faker->freeEmail,
                 'address' => $faker->streetAddress,
                 'phone_number' => $faker->tollFreePhoneNumber,
-                'password' => bcrypt('123456')
+                'password' => bcrypt('123456'),
+                'level'=> 2
             ]);
         }
     }

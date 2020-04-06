@@ -1,0 +1,244 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto Slab", sans-serif;
+}
+:root {
+    --text-gray: rgba(102, 102, 102, 0.85);
+    --text-green: #86ba09;
+}
+
+/* --------------------- Navbar -------------------- */
+header{
+    display: flex;
+    padding: 30px 10%;
+    background-color: rgb(255, 255, 255);
+    
+}
+
+.logo{
+    cursor: pointer;
+    height: 50px;  
+}
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav-items {
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    
+}
+.nav-items .nav-link {
+    display: inline-block;
+    align-items: center;
+    padding: 20px 20px;
+    justify-content: center;
+    font-size: 1.1rem;
+    position: relative;
+}
+.nav-items li a{
+    color: grey;
+}
+.nav-items .nav-link a:hover {
+    color: greenyellow
+}
+
+.nav-items .nav-link .dropdown-menu {
+    list-style: none;
+    margin-top: 0.5rem;
+    padding: 1rem 0 1rem 1rem;
+    width: 200px;
+    box-shadow: 0px 0px 20px #888888;
+    background-color: white;
+    z-index: 1;
+}
+
+
+
+.nav-items .nav-link>.dropdown-menu {
+    display: none;
+    position: absolute;
+}
+
+.nav-items .nav-link:hover .dropdown-menu {
+    display: block;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
+}
+.icon i{
+    padding: 1rem;
+    font-size: 120%;
+    color: var(--text-gray);
+}
+.icon i:hover {
+    color: var(--text-green);
+}
+/* --------------------- SECTION-1 -------------------- */
+
+.section-1{
+    background-image:  url(../img/hinh-nen-trai-cay-dep-7.jpg);
+    height: 150px;
+    opacity: 0.9;
+    background-size: cover;
+}
+
+.title-content{
+    text-align: center;
+    color: #f1f1f1;
+    font-weight: 1000;
+    font-size: 150%;
+}
+.title-content a{
+    text-decoration: none;
+    color: #f1f1f1;
+
+}
+
+h1{
+    color: white;
+    text-align: center;
+    font-size: 250%;
+    line-height: 100px;
+}
+
+
+
+h2{
+    text-align: center;
+    font-size: 350%;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+/* --------------------- SECTION-2 -------------------- */
+.text{
+    margin-bottom: 50px;
+}
+
+.row{
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    height: 650px;
+}
+
+.size-img{
+    width: 85px;
+    height: 100px;
+}
+.image{
+    text-align: center;
+}
+.text-image, p{
+    text-align: center;
+    padding:  30px  ;
+}
+p{
+    margin-top: -10px;
+    opacity: 0.9;
+}
+
+.ly{
+    width: 70%;
+    margin: 20% 15%;
+}
+/* --------------------- SECTION-3 -------------------- */
+.section-3{
+    margin-top: 20px;
+    background-image: url(../img/backgroud-section3.jpg);
+    background-size: cover;
+    height: 400px;  
+    margin-bottom: 20px;
+}
+.text-3 h1{
+    color: black;
+}
+.text-3 p{
+    font-size: 120%;
+}
+.text-enter{
+    text-align: center;
+    height: 50px;
+}
+.enter{
+    border-radius: 20px;
+    padding: 18px 30px;
+    width: 30%;
+}
+
+.btn{
+    border-radius: 20px ;
+    padding: 15px 30px;
+    background-color: greenyellow;
+    color: white;
+    font-weight: 800;
+    margin: 0 auto;
+}
+/* --------------------- SECTION-4 -------------------- */
+.row-second{
+    display: grid;
+    grid-template-columns: auto auto auto auto ;
+    height: 300px;
+    margin-left: 50px;
+}
+
+.logo-footer{
+    cursor: pointer;   
+    height: 60px;
+    margin-left: 60px;
+}
+
+h3{
+    margin-top: 40px;
+    margin-bottom: 10px;
+    font-size: 140%;
+}
+
+.link ul{
+    line-height: 30px; 
+    list-style: none;
+}
+.link a{
+    color:gray;
+    font-size: 90%;
+}
+
+.link a:hover{
+    color: greenyellow;
+}
+.icon-footer{
+    color: gray;
+}
+
+.icon-footer i{
+    color: greenyellow;
+}
+.icon-footer ul{
+    list-style: none;
+    margin-left: 10%;
+    line-height: 30px;
+    margin-top: 10px;
+}
+.icon-footer a{
+    color: gray;
+    margin-left: 10px;
+}
+
+.icon-footer a:hover{
+    color: greenyellow;
+}
+/* --------------------- END -------------------- */
+.end{
+    height: 50px;
+    background-color: black;
+}
