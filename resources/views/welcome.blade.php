@@ -92,8 +92,8 @@
             <div class="links" style="height: 30px">
                 <a class="big"href="http://127.0.0.1:8000/products">Home</a>
                 <a class="big"href="https://laracasts.com">About Us</a>
-                <a class="big"href="https://laravel-news.com">Store</a>
-                <a class="big"href="https://forge.laravel.com">Knowledge</a>
+                <a class="big"href="http://127.0.0.1:5500/resources/store.html">Store</a>
+                <a class="big"href="http://127.0.0.1:5500/resources/know.html">Knowledge</a>
                 <a class="big"href="https://forge.laravel.com">Contract</a>
             </div>
         </div>

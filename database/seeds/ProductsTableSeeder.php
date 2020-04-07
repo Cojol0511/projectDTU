@@ -14,15 +14,15 @@ class ProductsTableSeeder extends Seeder
     {
         //
         $faker = Faker\Factory::create();
-        for($i = 0; $i < 10; $i++){
+        for ($i = 0; $i < 10; $i++) {
             Product::insert([
                 'name' => $faker->lastName(),
-                'id_type' => random_int(1,4),
-                'id_suppiler' => random_int(1,10),
+                'id_type' => random_int(1, 4),
+                //   'id_suppiler' => random_int(1,10),
                 'description' => $faker->realText(50),
-                'price' => random_int(100,1000),
-                'promotion_price'=> random_int(1,10),
-                'image' => str_random(10)
+                'price' => random_int(100, 1000),
+                'promotion_price' => random_int(1, 10),
+                // 'image' => str_random(10)
             ]);
         }
     }

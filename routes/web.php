@@ -17,12 +17,12 @@ Route::get('/', function () {
 // Route::resource('customers', 'CustomerController');
 // Route::resource('bills', 'BillController');
 // Route::resource('bill_details', 'BillDetailController');
-// Route::resource('products', 'ProductController');
+Route::resource('products', 'ProductController');
 // Route::resource('type_products', 'TypeProductController');
 // Route::resource('users', 'UserController');
-// Auth::routes();
+Auth::routes();
 
-// Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/home', 'HomeController@index')->name('home');
 
 
 // tuan

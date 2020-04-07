@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Image;
 use App\Product;
 use Illuminate\Http\Request;
+use SebastianBergmann\Environment\Console;
 
 class ProductController extends Controller
 {
@@ -17,7 +19,7 @@ class ProductController extends Controller
         //
         $products = Product::all();
 
-        return view('layouts.products.index', ['products' => $products]);
+        return view('products.index', ['products' => $products]);
         //return redirect()->route('products.index');
     }
 
@@ -41,31 +43,64 @@ class ProductController extends Controller
     public function store(Request $request)
     {
         //
-        $this->validate(
-            $request,
+        // dd($request->images->getClientOriginalName());
+
+
+        $request->validate(
             [
                 'name' => 'required',
                 'id_type' => 'required',
-                'id_supplier' => 'required',
+                // 'id_supplier' => 'required',
                 'description' => 'required',
                 'price' => 'required',
                 'promotion_price' => 'required',
-                'image' => 'required',
+                //'images' => 'required',
             ],
             [
                 // thong bao nhap
+                'name.required' => 'Bạn phải nhập tên sản phẩm',
+                'id_type.reuqired' => 'Bạn chưa chọn id_type cho sản phẩm',
+                // 'id_supplier.required' => 'id_supplier là bắt buộc',
+                'description.required' => 'description là bắt buộc',
+                'prices.required' => 'price là bắt buộc',
+                'promotion_price.required' => 'promotion_price là bắt buộc',
             ]
         );
-        $product = new Product();
-        $product->name = $request->name;
-        $product->id_type =  $request->id_type;
-        $product->id_supplier =  $request->id_supplier;
-        $product->description =  $request->description;
-        $product->price =  $request->id_price;
-        $product->promotion_price =  $request->promotion_price;
-        $product->image =  $request->image;
-        $product->save();
-        return redirect()->route('products.index');
+
+        $images = $request->images;
+        $checkExtention = 0;
+        foreach ($images as $image) {
+            $imageExtension = $image->getClientOriginalExtension();
+            if (
+                strtoupper($imageExtension) == 'JPG' ||
+                strtoupper($imageExtension) == 'JPEG' ||
+                strtoupper($imageExtension) == 'PNG'
+            ) {
+                $checkExtention++;
+            }
+        }
+        if ($checkExtention == count($images)) {
+            $product = new Product();
+            $product->name = $request->name;
+            //dd($request->name);
+            $product->id_type = $request->id_type;
+            // $product->id_supplier = $request->id_supplier;
+            $product->description = $request->description;
+            $product->price = $request->price;
+            $product->promotion_price = $request->promotion_price;
+            $product->save();
+            foreach ($images as $image) {
+                $filename = date('YmdHis') . "-" . $image->getClientOriginalName();
+                $image->storeAs('public/product-images', $filename);
+                Image::insert([
+                    'image' => $filename,
+                    'product_id' => $product->id
+                ]);
+            }
+            return redirect()->back()->with('success', 'Đăng tin sản phẩm thành công!');
+        } else {
+            return redirect()->back()->with('error', 'Hình ảnh không đúng định dạng!');
+        }
     }
 
     /**
@@ -108,16 +143,6 @@ class ProductController extends Controller
     public function update(Request $request, $id)
     {
         //
-        $product = Product::find($id);
-        $product->name = $request->name;
-        $product->id_type =  $request->id_type;
-        $product->id_supplier =  $request->id_supplier;
-        $product->description =  $request->description;
-        $product->price =  $request->id_price;
-        $product->promotion_price =  $request->promotion_price;
-        $product->image =  $request->image;
-        $product->save();
-        return redirect()->route('users.index');
     }
 
     /**
