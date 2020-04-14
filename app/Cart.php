@@ -4,30 +4,30 @@ namespace App;
 
 class Cart
 {
-	public $items = null;
+	public $products = null;
 	public $totalQty = 0;
 	public $totalPrice = 0;
 
 	public function __construct($oldCart){
 		if($oldCart){
-			$this->items = $oldCart->items;
+			$this->products = $oldCart->products;
 			$this->totalQty = $oldCart->totalQty;
 			$this->totalPrice = $oldCart->totalPrice;
 		}
 	}
 
-	public function add($item, $id){
-		$giohang = ['qty'=>0, 'price' => $item->unit_price, 'item' => $item];
-		if($this->items){
-			if(array_key_exists($id, $this->items)){
-				$giohang = $this->items[$id];
+	public function add($product, $id){
+		$newProduct = array('qty' => 0, 'price' => $product->price, 'productInfo' => $product);
+		if($this->products){
+			if(array_key_exists($id, $this->products)){
+				$newProduct = $this->products[$id];
 			}
 		}
-		$giohang['qty']++;
-		$giohang['price'] = $item->unit_price * $giohang['qty'];
-		$this->items[$id] = $giohang;
+		$newProduct['qty']++;
+		$newProduct['price'] = $product->price * $newProduct['qty'];
+		$this->products[$id] = $newProduct;
 		$this->totalQty++;
-		$this->totalPrice += $item->unit_price;
+		$this->totalPrice += $product->price;
 	}
 	//xóa 1
 	public function reduceByOne($id){
@@ -41,8 +41,9 @@ class Cart
 	}
 	//xóa nhiều
 	public function removeItem($id){
-		$this->totalQty -= $this->items[$id]['qty'];
-		$this->totalPrice -= $this->items[$id]['price'];
-		unset($this->items[$id]);
+		$this->totalQty -= $this->products[$id]['qty'];
+		$this->totalPrice -= $this->products[$id]['price'];
+		unset($this->products[$id]);
 	}
 }
+?>

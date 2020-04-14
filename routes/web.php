@@ -26,10 +26,22 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 
 // tuan
-Route::get('index', 'PageController@getIndex');
+// Route::get('index', 'PageController@getIndex');
 
-Route::get('admin', 'AdminController@getAdmin');
+// Route::get('admin', 'AdminController@getAdmin');
 
-Route::get('/Add-Cart/{id}', 'CartController@AddCart');
+// Route::get('/Add-Cart/{id}', 'CartController@AddCart');
 
-Route::post('dang-ki', 'PageController@postSingin');
+// Route::post('dang-ki', 'PageController@postSingin');
+
+Route::get('/', 'CartController@index');
+Route::get('/trang-chu', 'CartController@index');
+Route::get('/kien-thuc', 'PageController@knowledge');
+Route::get('/gioi-thieu', 'PageController@introduce');
+Route::get('/thanh-toan', 'PageController@checkOut');
+Route::get('/cua-hang', 'CartController@store');
+
+Route::get('/Add-Cart/{id}', 'PageController@AddCart');
+Route::get('/Delete-Item-Cart/{id}', 'CartController@DeleteItemCart');
+Route::get('/chi-tiet-san-pham/{id}', 'PageController@getDetail');
+Route::get('search', 'PageController@search')->name('search');

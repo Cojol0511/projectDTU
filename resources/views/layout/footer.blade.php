@@ -1,21 +1,23 @@
-<!-- Footter -->
-  <!-- /* --------------------- SECTION-3 -------------------- */ -->
-  <section class="section contact">
-    <div class="text-3">
-      <h1>Đăng ký để nhận cập nhật</h1>
-      <p>Để lại email để không bỏ lỡ bất kì ưu đãi nào</p>
-    </div>
-    <div class="text-enter">
-      <input class="enter" type="text" placeholder="Email...">
-      <input class="btn" type="submit" value="ĐĂNG KÝ">
-    </div>
 
+
+
+   <section class="section-3">
+    <div class="container">
+      <div class="text-3">
+        <h1>Đăng ký để nhận cập nhật</h1>
+        <p>Để lại email để không bỏ lỡ bất kì ưu đãi nào</p>
+      </div>
+      <div class="text-enter">
+        <input class="enter" type="text" placeholder="Email...">
+        <button>Đăng Ký</button>
+      </div>
+    </div>
   </section>
   <!-- /* --------------------- SECTION-4 -------------------- */ -->
   <section class="section footer">
     <div class="row-second">
       <div class="col-1-of-4">
-        <a href="#"><img class="logo-footer" src="source/img/logo-new.png" alt="Logo"></a>
+        <a href="#"><img class="logo-footer" src="{{('/source/img/logo-new.png')}}" alt="Logo"></a>
         <div class="icon-footer">
           <ul>
             <li><i class="fas fa-map-marker-alt"></i> 319 C16 Lý Thường Kiệt, Phường 15, Quận 11,<br>Tp.HCM</li>

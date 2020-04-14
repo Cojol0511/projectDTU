@@ -32,10 +32,30 @@
 
   <!--  Custom style -->
   <link rel="stylesheet" href="./css/style.css">
-  <!-- <link rel="stylesheet" href="./CDIO/introduce.css">   -->
+  <link rel="stylesheet" href="./css/introducess.css">
+  <link rel="stylesheet" href="./css/knowledges.css">
+  <link rel="stylesheet" href="./css/checkout.css">
+  <link rel="stylesheet" href="./css/Store.css">
+  <link rel="stylesheet" href="./css/productDetail.css">
 
   <!-- Jquery -->
+  <!-- Jquery -->
   <script src="./js/jquery-341.min.js"></script>
+
+  
+  <style>
+    #beta-dropdown{
+      display: none;
+    }
+
+    .lala:hover #beta-dropdown{
+      display: block;
+    }
+
+    .cart-item .media{
+      display: inline-block;
+    }
+  </style>
 </head>
 
 <body>
@@ -68,9 +88,9 @@
       <ul>
         <li style="display: inline-block;"><i class="fas fa-search" id="search"></i></li>
         <li style="display: inline-block;"><i class="fas fa-user" id="user"></i></li>
-        <li style="display: inline-block;">
+        <li style="display: inline-block;" class="lala">
 
-          <i class="fas fa-shopping-cart" id="cart" nmouseover="shopCart()"></i>
+          <i class="fas fa-shopping-cart" id="cart" ></i>
           <div class="cart-body" id="beta-dropdown">
             <div class="cart-item">
               <div class="media">
@@ -268,7 +288,7 @@
                 <a href="#" class="img-re">
                   <img src="./img/product-16-470x470.jpg" alt="new product 1">
                 </a>
-                <div class="shopping-cart-icon"><i class="fas fa-shopping-cart"></i></div>
+                <div class="shopping-cart-icon"><a href=""><i class="fas fa-shopping-cart"></i></a></div>
               </div>
             </div>
             <div class="product-name">
@@ -779,17 +799,19 @@
   <!-- ----------------X----------------supplier--------------X--------------- -->
 
   <!-- Footter -->
+  <div class="chen"></div>
   <!-- /* --------------------- SECTION-3 -------------------- */ -->
-  <section class="section contact">
-    <div class="text-3">
-      <h1>Đăng ký để nhận cập nhật</h1>
-      <p>Để lại email để không bỏ lỡ bất kì ưu đãi nào</p>
+  <section class="section-3">
+    <div class="container">
+      <div class="text-3">
+        <h1>Đăng ký để nhận cập nhật</h1>
+        <p>Để lại email để không bỏ lỡ bất kì ưu đãi nào</p>
+      </div>
+      <div class="text-enter">
+        <input class="enter" type="text" placeholder="Email...">
+        <button>Đăng Ký</button>
+      </div>
     </div>
-    <div class="text-enter">
-      <input class="enter" type="text" placeholder="Email...">
-      <input class="btn" type="submit" value="ĐĂNG KÝ">
-    </div>
-
   </section>
   <!-- /* --------------------- SECTION-4 -------------------- */ -->
   <section class="section footer">
@@ -841,7 +863,21 @@
 
 
 
+  <!-- Jquery -->
+  <script src="./js/jquery-341.min.js"></script>
 
+
+    <!-- JavaScript -->
+    <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css" />
+    <!-- Default theme -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/default.min.css" />
+    <!-- Semantic UI theme -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/semantic.min.css" />
+    <!-- Bootstrap theme -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/bootstrap.min.css" />
 
   <!-- owl carousel js -->
   <script src="./js/owl.carousel.min.js"></script>
